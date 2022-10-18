@@ -38,11 +38,11 @@ The model takes an image that satisfies:
 | `Conv2D(32, (3,3))`     | (None, 12, 12, 32)   | 320| activated with ReLU
 | `BatchNormalization()`   | (None, 12, 12, 32)| 128 |
 |`MaxPooling2D((2,2))`|(None, 6, 6, 32)|0|
-||
+|Fourth ConvNet|
 | `Conv2D(32, (3,3))`     | (None, 4, 4, 32)   | 320| activated with ReLU
 | `BatchNormalization()`   | (None, 4, 4, 32)| 128 |
 |`MaxPooling2D((2,2))`|(None, 2, 2, 32)|0|
-|Fourth ConvNet|
+||
 |`Flatten()` | (None, 128) | 0
 |`Dense(128)`| (None, 128) | 16512 | activated with ReLU
 | `BatchNormalization()`   | (None, 128)| 512 |
